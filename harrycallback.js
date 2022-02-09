@@ -1,9 +1,9 @@
 function fun1(){
     return new Promise (function(resolve  ,reject){
         setTimeout(() =>{
-            const error = ture;
+            const error = false;
             if(!error){
-                console.log('function:your promkse has been resolved');
+                console.log('function:your promise has been resolved');
                 resolve();
             }
             else{
@@ -12,12 +12,11 @@ function fun1(){
             }
             },2000);
         })
-    })
-}
+    }
+
 
 fun1().then(function(){
     console.log("Neeraj: Thanks for resolving");
-}).catch(function)(){
+}).catch((err) =>{
     console.log("Neeraj : very bad bro");
-}
 })
